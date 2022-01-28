@@ -6,7 +6,8 @@ painting.addEventListener('click',function(e){
     e.target.style.backgroundColor=selectedColor
 })
 
-let palleteColor=document.querySelector('.color-choice')
+let palleteColor=document.querySelector('.palette')
 palleteColor.addEventListener('click',function(e){
-    console.log(e.target)
+    console.log(e.target.id)
+    selectedColor=e.target.id
 })
